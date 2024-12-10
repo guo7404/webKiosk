@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk</title>
+    <link rel="stylesheet" href="kiosk.css">
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script src="kiosk.js"></script>
+</head>
+<body>
+    <h1>안녕하세요.</h1>
+    <hr>
+    <div class="manager-area" id="managerArea">
+        <button>관리자 메뉴</button>
+    </div>
+    <div id="main_wrap">
+        <div class="container">
+            <div class="box" id="menuArea">
+                <!-- Menu items will be dynamically added here -->
+                <h1>메뉴</h1>
+                <div id="menuItems">
+                    <div draggable="true" class="menu">Menu 1</div>
+                    <div draggable="true" class="menu">Menu 2</div>
+                    <div draggable="true" class="menu">Menu 3</div>
+                    <div draggable="true" class="menu">Menu 3</div>
+                    <div draggable="true" class="menu">Menu 3</div>
+                    <div draggable="true" class="menu">Menu 3</div>
+                    <div draggable="true" class="menu">Menu 3</div>
+                    <div draggable="true" class="menu">Menu 3</div>
+                </div>
+            </div>
+            <div class="box" id="cartArea">
+                <h1>장바구니</h1>
+                <div id="cartItems"></div>
+            </div>
+        </div>
+        <hr>
+        
+        <h1>결제란</h1>
+        <p></p>
+    </div>
+</body>
+</html>
