@@ -9,25 +9,21 @@
     <script src="kiosk.js"></script>
 </head>
 <body>
-    <!-- <hr> -->
-
     <!-- 관리자 버튼 -->
-    <!-- <div class="manager-area" id="managerArea"></div>
+    <div class="manager-area" id="managerArea"></div>
     <button id="managerBtn" >관리자 메뉴</button>
     <div id="managerMenu" class="hidden">
         <a href="#">메뉴추가</a><br>
         <a href="#">메뉴삭제</a><br>
         <a href="#">매출이익</a>
     </div>
-</div> -->
-<img src="img/로고.png" alt="logo" id="logo">
-
-
-    <div id="main_wrap">
+</div>
+<h1 style="text-align: center; font-size: 100px; font-weight: bold;">Coffee.</h1>
+<div id="main_wrap">
         <div class="container">
             <div id="menuArea">
                 <!-- Menu items will be dynamically added here -->
-                <h1>Menu</h1>
+                <h1 style="text-decoration: underline;">Menu</h1>
                 <div class="box" id="menuItems">
                     <div draggable="true" class="menu">Menu 1</div>
                     <div draggable="true" class="menu">Menu 2</div>
@@ -43,14 +39,15 @@
                     <div draggable="true" class="menu">Menu 12</div>
                 </div>
             </div>
-            <hr>
+            <!-- <br> -->
             <div id="cartArea">
-                <h1>Cart</h1>
+                <h1 style="text-decoration: underline;">Cart</h1>
                 <div class="box" id="cartItems">
                     <div class="cartItem">예시 Cart Item 1</div>
                 </div>
                 
                 <p style="text-align: right;">dropNdrop하여 메뉴를 추가하세요.</p>
+                <p style="text-align: right;">클릭시 메뉴가 삭제됩니다.</p>
             </div>
                 <!-- <br> -->
                 <!-- <hr> -->
@@ -58,17 +55,21 @@
                 
             
         </div>
-        <hr>
-        <div id="paymentArea">
-            <p style="font-size: 30px; font-weight: bold;">총 주문금액</p>
-            <div id="cartButton">
-            <button>결제</button>
-            <button>취소</button>
+        <!-- <br> -->
+         <div id="paymentArea">
+            <div id="paymentText">
+                <p style="font-size: 30px; font-weight: bold;">총 주문금액</p>
+                <p style="font-size: 50px; font-weight: bold;">1000000원</p>
+            </div>
+            <div id="paymentButton">
+                <button>결제</button>
+                <button>취소</button>
+            </div>
+            <!-- <div id="paymentArea">
+                <h1>결제란</h1>
+                <p></p>
+            </div> -->
         </div>
-        <!-- <div id="paymentArea">
-            <h1>결제란</h1>
-            <p></p>
-        </div> -->
     </div>
 
     <!-- 결제확인 -->
