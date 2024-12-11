@@ -7,7 +7,7 @@ $(document).ready(function() {
         $("#managerMenu").slideToggle();
     });
 
-    $("#cartButton").click(function() {
+    $("#paymentButton button").click(function() {
         alert(`${sumPrice}원 결제완료!`);
         location.reload();
     });
