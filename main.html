@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk</title>
+    <link rel="stylesheet" href="kiosk.css">
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script src="kiosk.js"></script>
+</head>
+<body>
+    <!-- <hr> -->
+
+    <!-- 관리자 버튼 -->
+    <!-- <div class="manager-area" id="managerArea"></div>
+    <button id="managerBtn" >관리자 메뉴</button>
+    <div id="managerMenu" class="hidden">
+        <a href="#">메뉴추가</a><br>
+        <a href="#">메뉴삭제</a><br>
+        <a href="#">매출이익</a>
+    </div>
+</div> -->
+<img src="img/로고.png" alt="logo" id="logo">
+
+
+    <div id="main_wrap">
+        <div class="container">
+            <div id="menuArea">
+                <!-- Menu items will be dynamically added here -->
+                <h1>Menu</h1>
+                <div class="box" id="menuItems">
+                    <div draggable="true" class="menu">Menu 1</div>
+                    <div draggable="true" class="menu">Menu 2</div>
+                    <div draggable="true" class="menu">Menu 3</div>
+                    <div draggable="true" class="menu">Menu 4</div>
+                    <div draggable="true" class="menu">Menu 5</div>
+                    <div draggable="true" class="menu">Menu 6</div>
+                    <div draggable="true" class="menu">Menu 7</div>
+                    <div draggable="true" class="menu">Menu 8</div>
+                    <div draggable="true" class="menu">Menu 9</div>
+                    <div draggable="true" class="menu">Menu 10</div>
+                    <div draggable="true" class="menu">Menu 11</div>
+                    <div draggable="true" class="menu">Menu 12</div>
+                </div>
+            </div>
+            <hr>
+            <div id="cartArea">
+                <h1>Cart</h1>
+                <div class="box" id="cartItems">
+                    <div class="cartItem">예시 Cart Item 1</div>
+                </div>
+                
+                <p style="text-align: right;">dropNdrop하여 메뉴를 추가하세요.</p>
+            </div>
+                <!-- <br> -->
+                <!-- <hr> -->
+                <!-- <br> -->
+                
+            
+        </div>
+        <hr>
+        <div id="paymentArea">
+            <p style="font-size: 30px; font-weight: bold;">총 주문금액</p>
+            <div id="cartButton">
+            <button>결제</button>
+            <button>취소</button>
+        </div>
+        <!-- <div id="paymentArea">
+            <h1>결제란</h1>
+            <p></p>
+        </div> -->
+    </div>
+
+    <!-- 결제확인 -->
+    <div id="paymentConfirm" hidden>
+        <p>결제하시겠습니까?</p>
+        <button>확인</button>
+        <button>취소</button>
+    </div>
+
+    <!-- 결제완료시 -->
+    <div id="paymentComplete" hidden>
+        <p>결제가 완료되었습니다.</p>
+        <p>주문번호 : 1234567890</p>
+        <p>주문일시 : 2024-12-11 12:34:56</p>
+        <p>주문금액 : 10000원</p>
+    </div>
+
+
+</body>
+</html>
