@@ -9,22 +9,36 @@
     <script src="kiosk.js"></script>
 </head>
 <body>
-    <h1 style="display: flex; justify-content: center; font-size:50px;">Hamburger</h1>
-    <br>
-    <div id="container">
-        <div id="menu-area">
-            <h2 style="display: flex; justify-content: center;">menu</h2>
-            <div class="zone" id="menu-zone">
-            </div>
+    <button id="call-admin-button">Hambuger</button>
+    <div class="admin-buttons-container">
+        <button id="show-sales-history-button" class="admin-button">판매 내역 보기</button>
+        <button id="clear-sales-history-button" class="admin-button">판매 내역 초기화</button>
+        <button id="add-menu-item-button" class="admin-button">메뉴 추가</button>
+        <button id="remove-menu-item-button" class="admin-button">메뉴 삭제</button>
+    </div>
+    <div id="menu-container"></div>
+    <div id="cart-container"></div>
+    <div class="total-and-payment-container">
+        <p id="total">total : 0원</p>
+        <div class="payment-buttons-container">
+            <button id="payment-button">결제</button>
+            <button id="cancel-button">취소</button>
         </div>
-        <div id="cart-area">
-            <h2 style="display: flex; justify-content: center;">cart</h2>
-            <div class="zone" id="cart-zone">
-            </div>
-            <div id="total-price">
-                <h3 style="display: flex; justify-content: center;">total price</h3>
-                <div id="total-price-zone">
-                </div>
+    </div>
+
+    <!-- 영수증 모달 창 -->
+    <div id="receipt-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal-button" class="close-button">&times;</span>
+            <pre id="receipt-content"></pre>
+        </div>
+    </div>
+
+    <!-- 판매 내역 모달 창 -->
+    <div id="sales-history-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-sales-history-modal-button" class="close-button">&times;</span>
+            <pre id="sales-history-content"></pre>
         </div>
     </div>
 </body>

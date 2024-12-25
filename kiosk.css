@@ -1,46 +1,162 @@
-/*.클래스 #id*/
-body{
-    margin: 10px;
-    /* border: 1px solid black; */
-    /* justify-content: center; */
-}
-#container{
+#menu-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+    
 }
-#menu-area, #cart-area{
-    border: 5px solid black;
-    width: 45%; /* 너비를 45%로 설정 */
-    /* height: 1200px; 높이를 500px로 설정 */
-    border-radius: 10px;
-    /* margin: 10px; */
-}
-#menu-zone{
-    display: grid;
-    height: 1100px;
-    grid-template-columns: repeat(3, 1fr); /* 3칸짜리 바둑판모양 */
-    justify-content: center;
-    text-align: center;
-    overflow-y: auto;
-}
-#cart-zone{
-    /* width: 100%; */
-    height: 1100px;
-    /* display: block; */
-    justify-content: center;
-    text-align: center;
-    overflow-y: auto;
-}
-.menu-item{
-    border: 3px solid black;
-    border-radius: 10px;
-    margin: 10px;
+
+.menu-item {
+    border: 1px solid #ccc;
     padding: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+#cart-container {
+    margin: 20px auto; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 800px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0; 
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.0em; 
+}
+
+.cart-item p,
+.cart-item input,
+.cart-item button {
+    flex: 1; 
+    text-align: center; 
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item input {
+    width: 50px;
+}
+
+.total-and-payment-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    cursor: grab;
-    height: 300px;
+    
+}
+
+#total {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center; 
+    margin-right: 20px; 
+}
+
+#payment-button,
+#cancel-button,
+#show-sales-history-button,
+#clear-sales-history-button,
+#add-menu-item-button,
+#remove-menu-item-button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    display: block;
+}
+
+#call-admin-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.admin-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.admin-button {
+    display: none;
+}
+
+#receipt-modal,
+#sales-history-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#receipt-content,
+#sales-history-content {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.payment-buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+#payment-button,
+#cancel-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    display: block;
 }
