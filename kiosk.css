@@ -1,168 +1,46 @@
-body {
-    background-color: ghostwhite;
-    font-family: 'Courier New', Courier, monospace;
+/*.클래스 #id*/
+body{
+    margin: 10px;
+    /* border: 1px solid black; */
+    /* justify-content: center; */
 }
-h1 {
+#container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#menu-area, #cart-area{
+    border: 5px solid black;
+    width: 45%; /* 너비를 45%로 설정 */
+    /* height: 1200px; 높이를 500px로 설정 */
+    border-radius: 10px;
+    /* margin: 10px; */
+}
+#menu-zone{
+    display: grid;
+    height: 1100px;
+    grid-template-columns: repeat(3, 1fr); /* 3칸짜리 바둑판모양 */
     justify-content: center;
     text-align: center;
-}
-/* ============================================== */
-#managerMenu {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    background-color: #f2ece3;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-top: 5px;
-}
-#managerMenu a {
-    text-decoration: none;
-    color: #333;
-    line-height: 1.8;
-    padding: 0 10px;
-}
-#managerMenu a:hover {
-    color: #007bff;
-}
-#logo {
-    width: 350px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#main_wrap {
-    width: 1280px;
-    /*height: 800px;*/
-    background-color: #FFF;
-    margin: 20px auto;
-    border: 1px solid #DDD;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px #DDD;
-    padding: 10px;
-}
-#cartButton {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-#cartButton button {
-    width: 100px;
-    height: 50px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-#menuItems {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* grid-auto-flow: dense; */
-    height: 800px;
-    /* max-height: fit-content; */
-    overflow-y: auto;
-    /* overflow: hidden; */
-}
-#cartItems {
-    /* display: grid; */
-    height: 700px;
-    /* max-height: fit-content; */
     overflow-y: auto;
 }
-::-webkit-scrollbar {
-    display: none;
-}
-#menuArea {
-    background-color:#f2ece3;
-    width: 60%;
-    /* height: 70vh; */
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-}
-#cartArea {
-    background-color:#f2ece3;
-    width: 38%;
-    /* height: 70vh; */
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-}
-#paymentArea {
-    display: flex;
-    flex-direction: row;
-}
-#paymentText {
-    background-color:#ddcec8;
-    width: 60%;
-    /* height: 70vh; */
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-}
-#paymentButton {
-    /* background-color:#ddcec8; */
-    width: 38%;
-    /* height: 70vh; */
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    display: flex;
-    /* flex-direction: column; */
+#cart-zone{
+    /* width: 100%; */
+    height: 1100px;
+    /* display: block; */
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    overflow-y: auto;
 }
-#paymentButton button {
-    width: 100%;
-    height: 100%;
-    margin: 10px;
-    border: 7px solid #ccc;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: bold;
-}
-/* ============================================== */
-.menu {
-    height: 150px;
-    width: 150px;
-    background-color: whitesmoke;
-    border: 1px solid black;
+.menu-item{
+    border: 3px solid black;
     border-radius: 10px;
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: grab;
-}
-#cartItems .cartItem {
-    height: 50px;
-    background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container {
-    display: flex;
-    flex-direction: row;
-}
-.cloned-menu {
-    width: 100%;
-    height: 40px;
-    margin: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.manager-area {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: right;
-}
-.paymentConfirm {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: grab;
+    height: 300px;
 }
